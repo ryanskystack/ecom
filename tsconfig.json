@@ -21,6 +21,7 @@
     "jsx": "react-jsx"
   },
   "include": [
-    "src"
+    "src",
+    "_tests_/integration/App.test.tsx"
   ]
 }
