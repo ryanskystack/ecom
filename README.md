@@ -45,33 +45,53 @@ The project follows a specific folder structure and uses a variety of technologi
 ### Folder Structure:
 
 ecom/
+
 ├── __mocks__/
+
 │   └── js_fileMock.js
+
 ├── __tests__/
+
 │   ├── integration/
+
 │   └── unit/
+
 ├── node_modules/
+
 ├── public/
+
 ├── src/
+
 │   ├── components/
-│   │   ├── ProductList.js
-│   │   ├── ProductCard.js
-│   │   └── Cart.js
+
 │   ├── constants/
+
 │   ├── page/
-│   ├── api
-│   │   └── index.js
+
+│   ├── api/
+
 │   ├── utils/
+
 │   ├── App.css
+
 │   ├── App.tsx
+
 │   ├── index.css
+
 │   ├── index.tsx
+
 │   └── logo.svg
+
 ├── .gitignore
+
 ├── jest.setup.js
+
 ├── package-lock.json
+
 ├── package.json
+
 ├── README.md
+
 └── tsconfig.json
 
 
