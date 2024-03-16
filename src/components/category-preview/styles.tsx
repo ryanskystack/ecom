@@ -28,6 +28,6 @@ export const Preview = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 15px;
-    grid-row-gap: 25px;
+    grid-row-gap: 50px;
   }
 `;

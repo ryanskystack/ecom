@@ -10,7 +10,7 @@ export const ProductCartContainer = styled.div`
 
   img {
     width: 100%;
-    height: 95%;
+    height: 90%;
     object-fit: cover;
     margin-bottom: 5px;
   }
@@ -42,6 +42,7 @@ export const ProductCartContainer = styled.div`
       opacity: 0.9;
       min-width: unset;
       padding: 0 10px;
+      font-size: 13px;
     }
 
     &:hover {
@@ -53,6 +54,18 @@ export const ProductCartContainer = styled.div`
       }
     }
   }
+
+  @media screen and (max-width: 400px) {
+    button {    
+      font-size: 10px;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    button {    
+      font-size: 8px;
+    }
+  }
 `;
 
 export const Footer = styled.div`
@@ -61,13 +74,27 @@ export const Footer = styled.div`
   display: flex;
   justify-content: space-between;
   font-size: 18px;
+
+  @media screen and (max-width: 800px) {
+    font-size: 16px;
+    flex-direction: column;
+  }
+
 `;
 
-export const Name = styled.span`
+export const Name = styled.div`
   width: 90%;
   margin-bottom: 15px;
+
+  @media screen and (max-width: 800px) {
+    font-size: 14px;
+  }
 `;
 
-export const Price = styled.span`
+export const Price = styled.div`
   width: 10%;
+
+  @media screen and (max-width: 800px) {
+    font-size: 14px;
+  }
 `;
