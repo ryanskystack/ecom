@@ -1,6 +1,4 @@
-// import { configureStore } from '@reduxjs/toolkit';
 import { compose, createStore, applyMiddleware, Middleware } from 'redux';
-import expireReducer from 'redux-persist-expire';
 import { persistStore, persistReducer, PersistConfig } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 import logger from 'redux-logger';
@@ -20,8 +18,6 @@ type ExtendedPersistConfig = PersistConfig<RootState> & {
     whitelist: (keyof RootState)[];
 };
 
-
-
 const persistConfig: ExtendedPersistConfig = {
     key: 'root',
     storage,
@@ -31,13 +27,6 @@ const persistConfig: ExtendedPersistConfig = {
 const sagaMiddleware = createSagaMiddleware();
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);
-
-
-// const composeEnhancer =
-//     (process.env.NODE_ENV !== 'production' &&
-//         window &&
-//         window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) ||
-//     compose;
 
 
 const middleWares = [
@@ -60,17 +49,6 @@ export const store = createStore(
 );
 
 sagaMiddleware.run(rootSaga);
-
-
-// const store = configureStore({
-//     reducer: persistedReducer,
-//     middleware: (getDefaultMiddleware) =>
-//         getDefaultMiddleware({
-//             serializableCheck: false,
-//         }),
-//     devTools: process.env.NODE_ENV !== 'production',
-// });
-
 
 
 export const persistor = persistStore(store);
