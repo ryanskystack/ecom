@@ -17,7 +17,7 @@
 ### Run the project
 
 Start the fake server
-#### `npx json-server db.json`
+#### `npm run json-server`
 
 Start the application:
 #### `npm start`

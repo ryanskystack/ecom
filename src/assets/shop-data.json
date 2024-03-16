@@ -1,0 +1,239 @@
+{
+    "shop_data": [
+        {
+            "title": "Hats",
+            "items": [
+                {
+                    "id": 1,
+                    "name": "Brown Brim",
+                    "imageUrl": "//www.shoptikigirl.com/cdn/shop/products/6F6C1071-2.jpg?v=1671210742",
+                    "price": 25
+                },
+                {
+                    "id": 2,
+                    "name": "Blue Beanie",
+                    "imageUrl": "https://i.etsystatic.com/18889371/r/il/278bbb/2706292174/il_794xN.2706292174_2zj2.jpg",
+                    "price": 18
+                },
+                {
+                    "id": 3,
+                    "name": "Brown Cowboy",
+                    "imageUrl": "https://americanhatmakers.com/cdn/shop/files/Hollywood-Brown-Leather-CowboyHat-Men-FW-AmericanHatMakers-_8.jpg?v=1693002318&width=800",
+                    "price": 35
+                },
+                {
+                    "id": 4,
+                    "name": "Grey Brim",
+                    "imageUrl": "https://www.hatsbythe100.com.au/cdn/shop/products/seahawk_6.jpg?v=1681095515&width=533",
+                    "price": 25
+                },
+                {
+                    "id": 5,
+                    "name": "Green Beanie",
+                    "imageUrl": "https://images.squarespace-cdn.com/content/v1/53dcd8fee4b071b54b3296c9/dc7cc840-2fa1-491c-a899-261fda50ff5b/Mens+Hat+in+dark+green+lambswool.+Ethically+made+in+Scotland+by+Collingwood-Norris.jpg",
+                    "price": 18
+                },
+                {
+                    "id": 6,
+                    "name": "Palm Tree Cap",
+                    "imageUrl": "https://theexplorelife.com.au/cdn/shop/products/surfcaplightgreenexplore2_800x.jpg?v=1675894227",
+                    "price": 14
+                },
+                {
+                    "id": 7,
+                    "name": "Red Beanie",
+                    "imageUrl": "https://i.etsystatic.com/25219010/r/il/2f2b1a/3521774870/il_fullxfull.3521774870_eyx9.jpg",
+                    "price": 18
+                },
+                {
+                    "id": 8,
+                    "name": "Wolf Cap",
+                    "imageUrl": "https://theberrybarn.com.au/wp-content/uploads/2022/02/d2e37747-a5ed-430a-8b3e-8147c8ebe87c.jpg",
+                    "price": 14
+                },
+                {
+                    "id": 9,
+                    "name": "Blue Snapback",
+                    "imageUrl": "https://www.headict.co.uk/962-large_default/ny-snapback-blue-red,Blue,%20snapback,%20with,%20red,%20visor,%20Snapback,%20NY,%209Fifty,%20blue,%20red.jpg",
+                    "price": 16
+                }
+            ]
+        },
+        {
+            "title": "Sneakers",
+            "items": [
+                {
+                    "id": 10,
+                    "name": "Adidas NMD",
+                    "imageUrl": "https://5.imimg.com/data5/SELLER/Default/2021/8/XN/OT/TG/19724579/webp-net-resizeimage-500x500.jpg",
+                    "price": 220
+                },
+                {
+                    "id": 11,
+                    "name": "Adidas Yeezy",
+                    "imageUrl": "https://down-th.img.susercontent.com/file/0753cc35e9b741d7f8d2f46cf4146d45",
+                    "price": 280
+                },
+                {
+                    "id": 12,
+                    "name": "Black Converse",
+                    "imageUrl": "https://converse.ca/media/catalog/product/cache/7675cebc3e2f09ee2a340c17d68ace33/a/0/a00916c_a_107x1.jpg",
+                    "price": 110
+                },
+                {
+                    "id": 13,
+                    "name": "Nike White AirForce",
+                    "imageUrl": "https://www.culturekings.com.au/cdn/shop/collections/Nike_Air_Force_1_1024x1024.jpg?v=1661386245",
+                    "price": 160
+                },
+                {
+                    "id": 14,
+                    "name": "Nike Red High Tops",
+                    "imageUrl": "https://i.pinimg.com/originals/32/a6/2b/32a62bd90b688de6d21c48bc35d1dc0b.jpg",
+                    "price": 160
+                },
+                {
+                    "id": 15,
+                    "name": "Nike Brown High Tops",
+                    "imageUrl": "https://i.pinimg.com/736x/c6/87/42/c68742dd41296c107a1fc4d8714bcd07.jpg",
+                    "price": 160
+                },
+                {
+                    "id": 16,
+                    "name": "Air Jordan Limited",
+                    "imageUrl": "https://apollokick.myshopify.com/cdn/shop/products/product-image-586335426_480x480.jpg?v=1530652788",
+                    "price": 190
+                },
+                {
+                    "id": 17,
+                    "name": "Timberlands",
+                    "imageUrl": "https://images.journeys.com/images/products/1_4895_FS_ALT1C.JPG",
+                    "price": 200
+                }
+            ]
+        },
+        {
+            "title": "Jackets",
+            "items": [
+                {
+                    "id": 18,
+                    "name": "Black Jean Shearling",
+                    "imageUrl": "https://cdn.lookastic.com/looks/shearling-jacket-turtleneck-jeans-large-63136.jpg",
+                    "price": 125
+                },
+                {
+                    "id": 19,
+                    "name": "Blue Jean Jacket",
+                    "imageUrl": "https://www.jeanjail.com.au/cdn/shop/products/Finley-Denim-Jacket-Light-Blue3_1200x.jpg?v=1655697493",
+                    "price": 90
+                },
+                {
+                    "id": 20,
+                    "name": "Grey Jean Jacket",
+                    "imageUrl": "https://images.asos-media.com/products/asos-design-skinny-denim-jacket-in-grey/22621972-1-grey?$n_640w$&wid=513&fit=constrain",
+                    "price": 90
+                },
+                {
+                    "id": 21,
+                    "name": "Brown Shearling",
+                    "imageUrl": "https://i.ebayimg.com/images/g/6MsAAOSwm9dgT62y/s-l1200.webp",
+                    "price": 165
+                },
+                {
+                    "id": 22,
+                    "name": "Tan Trench",
+                    "imageUrl": "https://www.jennikayne.com/cdn/shop/products/cotton-trench-coat-light-tan-1_1024x.jpg?v=1674858152",
+                    "price": 185
+                }
+            ]
+        },
+        {
+            "title": "Womens",
+            "items": [
+                {
+                    "id": 23,
+                    "name": "Blue Tanktop",
+                    "imageUrl": "https://allyfashion.com/cdn/shop/products/tank-blue-tank-top-crew-neck-seamless-32886223896769.jpg?v=1662670807",
+                    "price": 25
+                },
+                {
+                    "id": 24,
+                    "name": "Floral Blouse",
+                    "imageUrl": "https://images.asos-media.com/products/stradivarius-ruffle-blouse-in-floral-print/204806828-2?$n_640w$&wid=513&fit=constrain",
+                    "price": 20
+                },
+                {
+                    "id": 25,
+                    "name": "Floral Dress",
+                    "imageUrl": "https://www.stfrock.com.au/cdn/shop/products/89209-f_green_floral_074_1_ecopy.jpg?v=1647411770",
+                    "price": 80
+                },
+                {
+                    "id": 26,
+                    "name": "Red Dots Dress",
+                    "imageUrl": "https://allthewildroses.com/cdn/shop/files/BridieRedPolka-DotShortDress-2_800x.jpg?v=1694328824",
+                    "price": 80
+                },
+                {
+                    "id": 27,
+                    "name": "Striped Sweater",
+                    "imageUrl": "https://media.brunellocucinelli.com/image/upload/t_bc_sfcc_v_image/v1688083320/prod/seecommerce/original/232M12714514-CYB15-F.jpeg",
+                    "price": 45
+                },
+                {
+                    "id": 28,
+                    "name": "Yellow Track Suit",
+                    "imageUrl": "https://pbs.twimg.com/media/DWPW0j-X0AAXi_o.jpg",
+                    "price": 135
+                },
+                {
+                    "id": 29,
+                    "name": "White Blouse",
+                    "imageUrl": "https://m.trenery.com.au/productimages_display/COMPMEDIUM/1/124940_586319_390871.jpg",
+                    "price": 20
+                }
+            ]
+        },
+        {
+            "title": "Mens",
+            "items": [
+                {
+                    "id": 30,
+                    "name": "Camo Down Vest",
+                    "imageUrl": "https://i.ebayimg.com/images/g/HPMAAOSw-8lheB7n/s-l1600.jpg",
+                    "price": 325
+                },
+                {
+                    "id": 31,
+                    "name": "Floral T-shirt",
+                    "imageUrl": "https://guess.com.au/cdn/shop/files/GUESSMen_sGrasslandFloralSkyerT-ShirtM3RP12KBC70FrontView.jpg?v=1694479633",
+                    "price": 20
+                },
+                {
+                    "id": 32,
+                    "name": "Black & White Longsleeve",
+                    "imageUrl": "https://i.etsystatic.com/6454408/r/il/d04ad0/1283392726/il_570xN.1283392726_l4gk.jpg",
+                    "price": 25
+                },
+                {
+                    "id": 33,
+                    "name": "Pink T-shirt",
+                    "imageUrl": "https://www.lowes.com.au/media/catalog/product/6/2/62026_f_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=&width=",
+                    "price": 25
+                },
+                {
+                    "id": 34,
+                    "name": "Jean Long Sleeve",
+                    "imageUrl": "https://amsupplymenswear.com/cdn/shop/products/long-sleeve-blue-denim-shirt-long-sleeve-button-down-32967496368321.jpg?v=1666091724",
+                    "price": 40
+                },
+                {
+                    "id": 35,
+                    "name": "Burgundy T-shirt",
+                    "imageUrl": "https://images.asos-media.com/products/asos-design-oversized-t-shirt-with-crew-neck-in-burgundy/201741113-1-portroyale?$n_640w$&wid=513&fit=constrain",
+                    "price": 25
+                }
+            ]
+        }
+    ]
+}
