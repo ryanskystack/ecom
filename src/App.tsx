@@ -4,15 +4,18 @@ import Spinner from "./components/spinner";
 import { GlobalStyle } from "./global.styles";
 import './App.css';
 
+const Navigation = lazy(() =>
+  import("./routes/navigation")
+);
 const Shop = lazy(() => import("./routes/shop"));
 
 function App() {
   return (
     <Suspense fallback={<Spinner />}>
       <GlobalStyle />
+      <Navigation />
       <Routes>
-        <Route path='/*' element={<Shop />}>
-        </Route>
+        <Route path="/*" element={<Shop />} />
       </Routes>
     </Suspense>
   );
