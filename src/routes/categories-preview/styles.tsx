@@ -7,6 +7,12 @@ export const CategoryContainer = styled.div`
   row-gap: 50px;
 `;
 
+export const FilterGroup = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+`;
+
 export const Title = styled.h2`
   font-size: 38px;
   margin-bottom: 25px;
