@@ -23,6 +23,8 @@
   },
   "include": [
     "src",
-    "_tests_/integration/App.test.tsx"
+    "_tests_/integration/App.test.tsx",
+    "babel.config.js",
+    "jest.config.js"
   ]
 }
