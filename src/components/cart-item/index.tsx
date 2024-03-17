@@ -1,4 +1,4 @@
-import { FC, memo } from 'react';
+import React, { FC, memo } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { CartItemContainer, ItemDetails } from './styles';
 import { removeItemFromCart } from '../../store/cart/cart.action';
