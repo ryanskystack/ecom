@@ -1,46 +1,157 @@
-# Getting Started with Create React App
+# E-Commerce Product Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Setup and Running the Application
 
-## Available Scripts
+### Clone the Repository:
 
-In the project directory, you can run:
+#### `git clone https://github.com/ryanskystack/ecom.git`
 
-### `npm start`
+### Navigate to the Project Directory
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#### `cd ecom`
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Install Dependencies
 
-### `npm test`
+#### `npm install`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Run the project
 
-### `npm run build`
+Start the fake server
+#### `npm run json-server`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Start the application:
+#### `npm start`
+The application will be available at http://localhost:3000.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Run test
+#### `npm test`
+This command launches the test runner in the interactive watch mode.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Application Overview
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+The E-Commerce Product Dashboard is a React application designed to showcase expertise in React, API integration, state management, and front-end testing. The primary goal is to create a simplified e-commerce platform where users can view products and add them to their shopping cart. While the project name suggests a dashboard, the focus is primarily on the product listing page.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Key Features:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- **Product Listing:** Display a list of products with essential details (image, description, price). Include an “Add to Cart” button for each product.
+- **Product Search and Filter:** Implement search functionality to find products by name. Create filters to categorize products (e.g., by categories).
+- **Responsive Design:** Ensure the application works well across different devices and screen sizes.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Architecture and Technologies Used
 
-## Learn More
+The project follows a specific folder structure and uses a variety of technologies for its development.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Folder Structure:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+ecom/
+
+├── __mocks__/
+
+│   └── js_fileMock.js
+
+├── __tests__/
+
+│   ├── integration/
+
+│   └── unit/
+
+├── node_modules/
+
+├── public/
+
+├── src/
+
+│   ├── components/
+
+│   ├── constants/
+
+│   ├── page/
+
+│   ├── api/
+
+│   ├── utils/
+
+│   ├── App.css
+
+│   ├── App.tsx
+
+│   ├── index.css
+
+│   ├── index.tsx
+
+│   └── logo.svg
+
+├── .gitignore
+
+├── jest.setup.js
+
+├── package-lock.json
+
+├── package.json
+
+├── README.md
+
+└── tsconfig.json
+
+
+### Technologies Used:
+
+- **React:** Chosen for its component-based architecture, reusability, and efficient rendering.
+- **JSON Server:** A powerful tool that allows us to create a fake REST API from a JSON file.
+- **Redux:** A predictable state container for JavaScript apps. It helps manage application state, making it consistent across different environments (client, server, and native).
+- **Jest for Testing:** A delightful JavaScript testing framework with a focus on simplicity.
+- **Styled Components:** A CSS-in-JS library that lets you write CSS code directly in your JavaScript files.
+- **Axios:** Used for making API requests to retrieve product data from the mock server.
+- **React Router:** Enables routing within the application.
+
+
+## Project Discussion
+
+### Project Scope:
+
+The checkout page and the entire order and payment process are not included in the current scope of the project. 
+
+#### Checkout Page:
+Create a new route for the checkout page (e.g., /checkout).
+Design the checkout form where users can enter their shipping details, payment information, and review their order.(Integration with Strip, etc)
+Implement validation for user inputs (e.g., valid email, required fields).
+
+#### Order Handling:
+Set up an API endpoint to handle order creation. (Integration with Strip, etc)
+When a user completes the checkout process, send an order request.
+Store relevant order details (products, quantities, user information) in a database or session.
+
+#### Payment Integration:
+Choose a payment gateway (e.g., Stripe, PayPal, or a mock payment service).
+Integrate the payment gateway into your checkout process.
+Handle payment confirmation and error scenarios.
+
+#### Confirmation Page:
+After successful payment, redirect users to a confirmation page.
+Display order details and a thank-you message.
+Remember that integrating payment gateways involves security considerations and sensitive data handling. 
+
+
+### Assumptions
+
+When submitting the order, the user should have already registered.
+
+Security issues have already been addressed.
+
+Backend side has already set up strategies to Handle high concurrency events:
+e.g. 
+#### Caching: 
+Implement caching mechanisms to reduce the load on the database. Cached data can be served directly to users, reducing the number of database queries.
+
+#### Database Sharding: 
+Distribute the database across multiple servers to distribute the load. Each shard handles a subset of the data, allowing for better scalability.
+
+#### Load Balancing: 
+Use load balancers to distribute incoming traffic across multiple servers. This ensures that no single server becomes overwhelmed with requests.
+
+#### Asynchronous Processing: 
+Offload non-critical tasks to background processes or queues. 
+
+#### Optimized Queries: 
+Ensure that database queries are optimized for performance. This includes using indexes, avoiding unnecessary joins, and fetching only the required data.

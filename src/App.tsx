@@ -1,25 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { lazy, Suspense } from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Spinner from "./components/spinner";
+import { GlobalStyle } from "./global.styles";
 import './App.css';
+
+const Navigation = lazy(() =>
+  import("./routes/navigation")
+);
+const Shop = lazy(() => import("./routes/shop"));
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Suspense fallback={<Spinner />}>
+      <GlobalStyle />
+      <Navigation />
+      <Routes>
+        <Route path="/*" element={<Shop />} />
+      </Routes>
+    </Suspense>
   );
 }
 
