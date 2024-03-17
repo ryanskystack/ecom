@@ -8,7 +8,7 @@ async function getCategoriesFromAPI(): Promise<{ shop_data: Category[] }> {
     if (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1") {
         url = 'http://localhost:3001/shop_data';
     } else {
-        url = 'https://raw.githubusercontent.com/ryanskystack/ecom/master/assets/shop-data.json';
+        url = 'https://raw.githubusercontent.com/ryanskystack/ecom/master/src/assets/shop-data.json';
     }
 
     const response = await axios.get(url);
