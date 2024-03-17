@@ -2,7 +2,7 @@
   "name": "ecom",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://ryanskystack.github.io/ecom",
+  "homepage": "https://ryanskystack.github.io/ecom/",
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.1",
     "@testing-library/jest-dom": "^5.17.0",
