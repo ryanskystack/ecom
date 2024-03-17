@@ -9,6 +9,7 @@ import {
     Footer,
     Name,
     Price,
+    Description
 } from './styles';
 
 type ProductCardProps = {
@@ -16,7 +17,7 @@ type ProductCardProps = {
 };
 
 const ProductCard: FC<ProductCardProps> = ({ product }) => {
-    const { name, price, imageUrl } = product;
+    const { name, description, price, imageUrl } = product;
     const dispatch = useDispatch();
     const cartItems = useSelector(selectCartItems);
 
@@ -29,6 +30,7 @@ const ProductCard: FC<ProductCardProps> = ({ product }) => {
                 <Name>{name}</Name>
                 <Price>{`$${price}`}</Price>
             </Footer>
+            <Description>{description}</Description>
             <Button
                 buttonType={BUTTON_TYPE_CLASSES.inverted}
                 onClick={addProductToCart}

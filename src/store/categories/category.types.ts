@@ -8,6 +8,7 @@ export type CategoryItem = {
     id: number;
     imageUrl: string;
     name: string;
+    description: string;
     price: number;
 };
 

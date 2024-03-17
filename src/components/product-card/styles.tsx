@@ -1,5 +1,15 @@
 import styled from "styled-components";
 
+export const Description = styled.div`
+  position: absolute;
+  top: 100px;
+  width: 80%;
+  font-size: 20px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+`;
+
 export const ProductCartContainer = styled.div`
   width: 100%;
   display: flex;
@@ -13,6 +23,20 @@ export const ProductCartContainer = styled.div`
     height: 90%;
     object-fit: cover;
     margin-bottom: 5px;
+    position: relative;
+    z-index: 1;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0);
+      transition: background 0.3s ease-in-out;
+      z-index: 2;
+    }
   }
 
   button {
@@ -21,11 +45,17 @@ export const ProductCartContainer = styled.div`
     position: absolute;
     top: 255px;
     display: none;
+    z-index: 3;
   }
 
   &:hover {
     img {
-      opacity: 0.8;
+      opacity: 0.4;
+    }
+
+    ${Description} {
+      opacity: 1;
+      z-index: 3;
     }
 
     button {
@@ -98,3 +128,4 @@ export const Price = styled.div`
     font-size: 14px;
   }
 `;
+
