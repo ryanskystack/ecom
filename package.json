@@ -39,6 +39,7 @@
     "test": "node --expose-gc ./node_modules/jest/bin/jest.js --runInBand --coverage",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
+    "homepage": "http://ryanskystack.github.io/ecom",
     "eject": "react-scripts eject",
     "json-server": "json-server --watch src/assets/shop-data.json --port 3001"
   },
