@@ -11,7 +11,6 @@ export function* fetchCategoriesAsync() {
     try {
         const response: { shop_data: Category[] } = yield* call(getCategoriesFromAPI);
         const categoriesArray: Category[] = response.shop_data;
-        // console.log('categoriesArray: ', categoriesArray);
         yield* put(fetchCategoriesSuccess(categoriesArray));
     } catch (error) {
         yield* put(fetchCategoriesFailed(error as Error));

@@ -13,7 +13,6 @@ type CategoryPreviewProps = {
 };
 
 const CategoryPreview: FC<CategoryPreviewProps> = ({ title, products }) => {
-    console.log('top products: ', products);
     return (
         <CategoryPreviewContainer>
             <h2>

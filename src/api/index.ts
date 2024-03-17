@@ -13,7 +13,6 @@ async function getCategoriesFromAPI(): Promise<{ shop_data: Category[] }> {
 
     const response = await axios.get(url);
     const data = response.data;
-    console.log('data', data);
     return { shop_data: data };
 }
 
