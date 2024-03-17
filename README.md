@@ -1,5 +1,8 @@
 # E-Commerce Product Dashboard
 
+# Easy review:
+https://ryanskystack.github.io/ecom/
+
 ## Setup and Running the Application
 
 ### Clone the Repository:
@@ -35,7 +38,7 @@ The E-Commerce Product Dashboard is a React application designed to showcase exp
 ## Key Features:
 
 - **Product Listing:** Display a list of products with essential details (image, description, price). Include an “Add to Cart” button for each product.
-- **Product Search and Filter:** Implement search functionality to find products by name. Create filters to categorize products (e.g., by categories).
+- **Product Search and Filter:** Implement search functionality to find products by name. Create a search box for the product name and a filter to categorize products (e.g., by categories).
 - **Responsive Design:** Ensure the application works well across different devices and screen sizes.
 
 ## Architecture and Technologies Used
@@ -47,8 +50,6 @@ The project follows a specific folder structure and uses a variety of technologi
 ecom/
 
 ├── __mocks__/
-
-│   └── js_fileMock.js
 
 ├── __tests__/
 
@@ -62,13 +63,17 @@ ecom/
 
 ├── src/
 
+│   ├── api/
+
+│   ├── assets/
+
 │   ├── components/
 
 │   ├── constants/
 
-│   ├── page/
+│   ├── routes/
 
-│   ├── api/
+│   ├── store/
 
 │   ├── utils/
 
@@ -79,6 +84,8 @@ ecom/
 │   ├── index.css
 
 │   ├── index.tsx
+
+│   ├── global.styles
 
 │   └── logo.svg
 
