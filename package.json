@@ -2,6 +2,7 @@
   "name": "ecom",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://ryanskystack.github.io/ecom",
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.1",
     "@testing-library/jest-dom": "^5.17.0",
@@ -36,6 +37,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "node --expose-gc ./node_modules/jest/bin/jest.js --runInBand --coverage",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject",
     "json-server": "json-server --watch src/assets/shop-data.json --port 3001"
   },
@@ -89,6 +92,7 @@
     "@types/redux-logger": "^3.0.13",
     "babel-jest": "^29.7.0",
     "babel-plugin-macros": "^3.1.0",
+    "gh-pages": "^6.1.1",
     "jest": "^27.5.1",
     "jest-environment-jsdom-sixteen": "^2.0.0",
     "jest-extended": "^4.0.2",
