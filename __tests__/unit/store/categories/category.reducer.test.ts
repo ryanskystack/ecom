@@ -7,7 +7,7 @@ import {
 import { mockCategories } from '../../../../__mocks__/mock-categories.js';
 
 describe('Category Reducer action tests', () => {
-    test('fetchCategoriesStart', () => {
+    it('fetchCategoriesStart', () => {
         const expectedState = {
             ...CATEGORIES_INITIAL_STATE,
             isLoading: true,
@@ -18,7 +18,7 @@ describe('Category Reducer action tests', () => {
         ).toEqual(expectedState);
     });
 
-    test('fetchCategoriesSuccess', () => {
+    it('fetchCategoriesSuccess', () => {
 
         const expectedState = {
             ...CATEGORIES_INITIAL_STATE,
@@ -34,7 +34,7 @@ describe('Category Reducer action tests', () => {
         ).toEqual(expectedState);
     });
 
-    test('fetchCategoriesFailed', () => {
+    it('fetchCategoriesFailed', () => {
         const mockError = new Error('Error fetching categories');
 
         const expectedState = {
